@@ -13,6 +13,8 @@
 2. Create a build directory: `mkdir build && cd build`
 3. Run CMake: `cmake ../ -DCMAKE_BUILD_TYPE=Release`
 4. Build the project: `make`
+    - the compiler might not be able to detect the eigen library, in that case you could manually get the eigen
+    - details: https://github.com/ohnooj/computer-graphics-ray-casting/issues/2
     - This will build both the raytracer (`raytracing`) and the scene generator (`generate_scene`).
 5. (Optional) Regenerate the scene: `./generate_scene > ../src/creative.json`
 6. Run the executable with the creative scene file: `./raytracing ../src/creative.json`
